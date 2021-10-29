@@ -1,0 +1,290 @@
+<html class="sr">
+
+<head>
+    <title>MRHD Interaction & Visual Designer</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compactable" content="ie-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="style.css" type="text/css" charset="utf-8">
+    <link rel="icon" href="MY LOGO/MRHD_white.png" type="image/icon type">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- CSS AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Syncopate:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+<!--styling part -->
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+    /*Images CSS*/
+
+    .container {
+        width: 65%;
+        margin: 2rem auto;
+    }
+
+    .gallery-1,
+    .gallery-2 {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(8, 5vw);
+        grid-gap: 1.5rem;
+        visibility: hidden;
+    }
+
+    .gallery__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .gallery__item--1 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 5;
+        /** Alternative Syntax **/
+        /* grid-column: 1 / span 2;  */
+        /* grid-row: 1 / span 2; */
+    }
+
+
+    .gallery__item--2 {
+        grid-column-start: 5;
+        grid-column-end: 9;
+        grid-row-start: 1;
+        grid-row-end: 9;
+        /** Alternative Syntax **/
+        /* grid-column: 5 / span 4;
+  grid-row: 1 / span 5; */
+    }
+
+    .gallery__item--3 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 5;
+        grid-row-end: 9;
+        /** Alternative Syntax **/
+        /* grid-column: 1 / span 4;  */
+        /* grid-row: 3 / span 3; */
+    }
+
+
+    .gallery__item--4 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 9;
+        /** Alternative Syntax **/
+        /* grid-column: 1 / span 4;  */
+        /* grid-row: 3 / span 3; */
+    }
+
+    .gallery__item--5 {
+        grid-column-start: 5;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 5;
+        /** Alternative Syntax **/
+        /* grid-column: 1 / span 2;  */
+        /* grid-row: 1 / span 2; */
+    }
+
+    .gallery__item--6 {
+        grid-column-start: 7;
+        grid-column-end: 9;
+        grid-row-start: 1;
+        grid-row-end: 5;
+        /** Alternative Syntax **/
+        /* grid-column: 5 / span 4;
+  grid-row: 1 / span 5; */
+    }
+
+    .gallery__item--7 {
+        grid-column-start: 5;
+        grid-column-end: 9;
+        grid-row-start: 5;
+        grid-row-end: 9;
+        /** Alternative Syntax **/
+        /* grid-column: 5 / span 4;
+  grid-row: 1 / span 5; */
+    }
+</style>
+
+<!--Mobile styling-->
+<style>
+    @media (max-width: 700px) {
+        .logo {
+            padding-top: 30px;
+            margin-bottom: 10px;
+            padding-bottom: 2%;
+        }
+
+        footer {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -10px;
+        }
+
+        .nav-link {
+            font-size: 10px;
+        }
+    }
+</style>
+
+<!--Body -->
+
+<body>
+    <!--Nav Bar-->
+    <nav class="navbar navbar-expand-lg" data-aos="zoom-in" data-aos-duration="1000">
+
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse  justify-content-start" id="navbarNav">
+                <ul class="navbar-nav "
+                    style="flex-wrap: initial; display: flex; align-items: center; flex-direction: row; justify-content: space-evenly; padding-bottom: 20px;  ">
+                    <!--<li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutme.html" style="color: black;">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html" style="color: black;">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=" nav-link" href="photo.html" style="color: black;">Photographs</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="ui.html" style="color: black;">UI Designs</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="https://drive.google.com/file/d/1rR_mCYixBPTaNgd1dqp8H_Q5xq9vwwei/view?usp=sharing"
+                            target="_blank" style="color: black;">Resume</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class=" nav-link" href="contact.html" style="color: black;">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="navbar-toggler" type="button" style="color: white;" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button>
+
+
+        </div>
+
+        <a href="index.html" style="position: absolute; left: 50%; transform: translate(-50%); z-index: 10px;"> <img
+                class="logo" src="images/MRHD.svg"></a>
+
+        <div class="collapse navbar-collapse mr-4 justify-content-sm-end" id="navbarNav">
+            <ul class="navbar-nav"
+                style="flex-wrap: initial; display: flex; align-items: center; flex-direction: row; justify-content: space-evenly; padding-right: 10px;">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com/in/raga-hari-deep-molagazzela-8b184a18a/"
+                        target="_blank" style="color: black;"><img src="images/linkedin.svg"></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://dribbble.com/x26hari" target="_blank" style="color: black;"><img
+                            src="images/dribble.svg"></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.behance.net/ragahamolagaz" target="_blank"
+                        style="color: black;"><img src="images/behance.svg"></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.instagram.com/x26.hari/" target="_blank"
+                        style="color: black;"><img src="images/Instagram.svg"></a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <!--Content-->
+
+
+    <div class="container">
+        <div class="gallery-1">
+            <figure class="gallery__item gallery__item--1">
+                <img src="images/1.jpg" alt="Gallery image 1" class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--2">
+                <img src="images/2.jpg" alt="Gallery image 2" class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--3">
+                <img src="images/3.jpg" alt="Gallery image 3" class="gallery__img">
+            </figure>
+        </div>
+    </div>
+    <div class="container">
+        <div class="gallery-2">
+            <figure class="gallery__item gallery__item--4">
+                <img src="images/4.jpg" alt="Gallery image 4" class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--5">
+                <img src="images/5.jpg" alt="Gallery image 5" class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--6">
+                <img src="images/6.jpg" alt="Gallery image 6" class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--7">
+                <img src="images/7.jpg" alt="Gallery image 7" class="gallery__img">
+            </figure>
+        </div>
+    </div>
+
+    <!--footer-->
+    <p
+        style=" position: absolute; left: 50%; transform: translateX(-50%); padding-top: 10px; text-align: center; font-style: futura;">
+        © 2021 Raga Hari Deep Molagazzela. All rights
+        reserved.</p>
+    <!--footer-->
+
+</body>
+<script>
+    ScrollReveal().reveal('.gallery__item--1', { delay: 400 });
+    ScrollReveal().reveal('.gallery__item--2', { delay: 600 });
+    ScrollReveal().reveal('.gallery__item--3', { delay: 800 });
+    ScrollReveal().reveal('.gallery__item--4', { delay: 400 });
+    ScrollReveal().reveal('.gallery__item--5', { delay: 600 });
+    ScrollReveal().reveal('.gallery__item--6', { delay: 800 });
+    ScrollReveal().reveal('.gallery__item--7', { delay: 1000 });
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+
+
+</html>

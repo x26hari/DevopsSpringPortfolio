@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "futura";
+  src: url("Futura.ttc") format("ttc");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "cocogoose";
+  src: url("cocogoose.ttf") format("truetype");
+}
+@font-face {
+  font-family: "cocogoose Pro";
+  src: url("Cocogoose\ Pro.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Louis George Cafe";
+  src: url("Louis\ George\ Cafe.ttf") format("truetype");
+}
+
+
+body{
+  font-family: cocogoose pro;
+}
+.nav-link
+{
+  font-family: futura;
+}
+html
+{
+  scroll-behavior: smooth;
+  
+  
+}
+

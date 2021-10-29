@@ -1,0 +1,276 @@
+<html>
+
+<head>
+    <title>MRHD Interaction & Visual Designer</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compactable" content="ie-edge">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css" charset="utf-8">
+    <link rel="icon" href="images/icon.png" type="image/icon type">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- CSS AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Syncopate:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+<!--styling part -->
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    .intro {
+        padding-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+
+    .bnt {
+        width: 250px;
+    }
+
+    video {
+        width: 25%;
+        float: right;
+    }
+
+    .container {
+        width: 60%;
+        margin: 2rem auto;
+    }
+
+    .photos {
+        width: 20%;
+        float: left;
+    }
+
+    footer {
+
+
+        align-items: center;
+        text-align: center;
+
+    }
+</style>
+
+<!--Mobile styling-->
+<style>
+    @media (max-width: 700px) {
+        .logo {
+            padding-top: 30px;
+            margin-bottom: 10px;
+            padding-bottom: 2%;
+        }
+
+        video {
+            float: none;
+            width: 250px;
+            margin-left: 0%;
+            margin-bottom: 2%;
+        }
+
+        .photos {
+            float: none;
+            width: 200px;
+            margin: 0%;
+            padding-bottom: 10%;
+        }
+
+        .btn {
+            width: 50%;
+            font-size: smaller;
+            margin-top: 10%;
+        }
+
+        .intro {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+        .nav-link {
+            font-size: 10px;
+        }
+
+        footer {
+            position: absolute;
+            max-width: 250px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    @media (min-width: 1000px) {
+        video {
+            margin-left: 10%;
+        }
+
+
+    }
+
+    @media (min-width: 2800px) {
+        .video {
+            width: 50%;
+        }
+
+        .photos {
+            width: 30%;
+        }
+
+        .intro {
+            width: 1700px;
+        }
+    }
+</style>
+
+<!--Body -->
+
+<body>
+
+
+    <!--Nav Bar-->
+    <nav class="navbar navbar-expand-lg" data-aos="zoom-in" data-aos-duration="1000">
+
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse  justify-content-start" id="navbarNav">
+                <ul class="navbar-nav "
+                    style="flex-wrap: initial; display: flex; align-items: center; flex-direction: row; justify-content: space-evenly; padding-bottom: 20px;  ">
+                    <!--<li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutme.html" style="color: black;">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html" style="color: black;">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=" nav-link" href="photo.html" style="color: black;">Photographs</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="ui.html" style="color: black;">UI Designs</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="https://drive.google.com/file/d/1rR_mCYixBPTaNgd1dqp8H_Q5xq9vwwei/view?usp=sharing"
+                            target="_blank" style="color: black;">Resume</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class=" nav-link" href="contact.html" style="color: black;">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="navbar-toggler" type="button" style="color: white;" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="black" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </button>
+
+
+        </div>
+
+        <a href="index.html" style="position: absolute; left: 50%; transform: translate(-50%); z-index: 10px;"> <img
+                class="logo" src="images/MRHD.svg"></a>
+
+        <div class="collapse navbar-collapse mr-4 justify-content-sm-end" id="navbarNav">
+            <ul class="navbar-nav"
+                style="flex-wrap: initial; display: flex; align-items: center; flex-direction: row; justify-content: space-evenly; padding-right: 10px;">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com/in/raga-hari-deep-molagazzela-8b184a18a/"
+                        target="_blank" style="color: black;"><img src="images/linkedin.svg"></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://dribbble.com/x26hari" target="_blank" style="color: black;"><img
+                            src="images/dribble.svg"></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.behance.net/ragahamolagaz" target="_blank"
+                        style="color: black;"><img src="images/behance.svg"></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.instagram.com/x26.hari/" target="_blank"
+                        style="color: black;"><img src="images/Instagram.svg"></a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <center>
+
+        <div class="intro">
+            <img class="photos" src="images/myphoto.jpg">
+            <video class="videos" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="500"
+                src="images/intro.mov" muted="true" autoplay="true"></video>
+        </div>
+
+        <div class="bnt">
+            <a href="aboutme.html" class="btn btn-primary"
+                style="background: rgba(0, 0, 0, 0.856); border-color: black; font-family: cocogoose; font-weight: bold; box-shadow: black;">ABOUT
+                ME</a>
+        </div>
+
+
+
+
+    </center>
+
+
+
+    <footer>
+        <!--footer-->
+        <p style="font-style: futura; padding-top: 50px;">
+            © 2021 Raga Hari Deep Molagazzela. All rights
+            reserved.</p>
+        <!--footer-->
+
+    </footer>
+
+
+</body>
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script>
+    ScrollReveal().reveal('.photos', { delay: 2800 });
+    ScrollReveal().reveal('.bnt', { delay: 7100 });
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+
+
+
+</html>
