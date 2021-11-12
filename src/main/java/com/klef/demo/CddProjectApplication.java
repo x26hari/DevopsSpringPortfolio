@@ -8,6 +8,7 @@ public class CddProjectApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CddProjectApplication.class, args);
+		System.out.println("Project Is Running");
 	}
 
 }
